@@ -3,7 +3,7 @@ const config = require('./module-federation.config');
 module.exports = withModuleFederation({
   ...config,
   remotes: [
-    ['app1', 'http://localhost:8081/']
+    ['app1', '/app1']
   ]
   /*
    * Remote overrides for production.

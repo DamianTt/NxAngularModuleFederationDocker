@@ -8,7 +8,7 @@ WORKDIR /app
 COPY ["decorate-angular-cli.js", "package*.json", "/app/"]
 RUN npm ci
 COPY . /app
-RUN npx nx build ${APP_NAME} --configuration=production
+RUN npx nx build ${APP_NAME} --configuration=production --base-href /${APP_NAME}/
 
 # Stage 2
 FROM nginx:1.22.0-alpine
