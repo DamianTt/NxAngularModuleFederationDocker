@@ -1,12 +1,22 @@
+# Nx + Angular + Module Federation + Docker
 
+1. Create new workspace (npx create-nx-workspace work) + Angular app named 'shell'
 
-# Work
+2. Create new Angular app named app1 (nx generate @nrwl/angular:app app1 --routing)
 
-This project was generated using [Nx](https://nx.dev).
+3. Select 'Nx generate..' from IDE extension named 'Nx Console', then select 'angular:setup-mf', set 'shell' app as host
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+4. Select 'Nx generate..' from IDE extension named 'Nx Console', then select 'angular:setup-mf', set 'app1' app as remote
 
-🔎 **Smart, Fast and Extensible Build System**
+# Docker
+
+`docker build --tag docker_shell:latest --build-arg APP_NAME=shell .`
+
+`docker build --tag docker_app1:latest --build-arg APP_NAME=app1 .`
+
+`docker run -d -it -p 8080:80/tcp --name docker-shell docker_shell:latest`
+
+`docker run -d -it -p 8081:80/tcp --name docker-app1 docker_app1:latest`
 
 ## Quick Start & Documentation
 
@@ -86,11 +96,6 @@ Run `nx graph` to see a diagram of the dependencies of your projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
-
-
-
-
-
 
 ## ☁ Nx Cloud
 

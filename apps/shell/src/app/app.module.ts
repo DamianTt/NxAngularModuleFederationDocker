@@ -3,22 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { ShellInnerComponent } from './shell-inner/shell-inner.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [AppComponent, ShellInnerComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(
-      [
-        {
-          path: 'app1',
-          loadChildren: () =>
-            import('app1/Module').then((m) => m.RemoteEntryModule),
-        },
-      ],
-      { initialNavigation: 'enabledBlocking' }
-    ),
+    RouterModule.forRoot([
+      {
+        path: 'inner',
+        component: ShellInnerComponent,
+      },
+      {
+        path: 'app1',
+        loadChildren: () =>
+          import('app1/Module').then((m) => m.RemoteEntryModule),
+      },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent],
