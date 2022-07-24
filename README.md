@@ -10,6 +10,10 @@
 
 # Docker
 
+`docker-compose up --build`
+
+OR
+
 `docker build --tag docker_shell:latest --build-arg APP_NAME=shell .`
 
 `docker build --tag docker_app1:latest --build-arg APP_NAME=app1 .`
