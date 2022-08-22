@@ -1,12 +1,8 @@
-# Nx + Angular + Module Federation + Docker
+# Nx + Angular + Module Federation + Angular Material + Docker
 
-1. Create new workspace (npx create-nx-workspace work) + Angular app named 'shell'
+# Development
 
-2. Create new Angular app named app1 (nx generate @nrwl/angular:app app1 --routing)
-
-3. Select 'Nx generate..' from IDE extension named 'Nx Console', then select 'angular:setup-mf', set 'shell' app as host
-
-4. Select 'Nx generate..' from IDE extension named 'Nx Console', then select 'angular:setup-mf', set 'app1' app as remote
+Run `npm install` then `npm run dev` to start developing
 
 # Docker
 

@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { RouterModule } from '@angular/router';
 import { HelloComponent } from './components/hello/hello.component';
-import { UiModule } from '@work/ui';
 
 @NgModule({
   declarations: [HelloComponent],
@@ -15,7 +14,6 @@ import { UiModule } from '@work/ui';
         component: HelloComponent,
       },
     ]),
-    UiModule,
   ],
   providers: [],
   exports: [],
