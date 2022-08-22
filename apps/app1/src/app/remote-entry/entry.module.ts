@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NxWelcomeComponent } from '../nx-welcome.component';
 import { RouterModule } from '@angular/router';
 import { HelloComponent } from './components/hello/hello.component';
+import { UiModule } from '@work/ui';
 
 @NgModule({
   declarations: [NxWelcomeComponent, HelloComponent],
@@ -15,6 +16,7 @@ import { HelloComponent } from './components/hello/hello.component';
         component: HelloComponent,
       },
     ]),
+    UiModule,
   ],
   providers: [],
   exports: [],

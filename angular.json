@@ -5,6 +5,7 @@
     "app1": "apps/app1",
     "app1-e2e": "apps/app1-e2e",
     "shell": "apps/shell",
-    "shell-e2e": "apps/shell-e2e"
+    "shell-e2e": "apps/shell-e2e",
+    "ui": "libs/ui"
   }
 }
