@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { NxWelcomeComponent } from '../nx-welcome.component';
 import { RouterModule } from '@angular/router';
 import { HelloComponent } from './components/hello/hello.component';
 import { UiModule } from '@work/ui';
 
 @NgModule({
-  declarations: [NxWelcomeComponent, HelloComponent],
+  declarations: [HelloComponent],
   imports: [
     CommonModule,
     RouterModule.forChild([
