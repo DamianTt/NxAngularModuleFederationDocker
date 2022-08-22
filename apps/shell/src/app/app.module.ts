@@ -19,6 +19,11 @@ import { ShellInnerComponent } from './shell-inner/shell-inner.component';
         loadChildren: () =>
           import('app1/Module').then((m) => m.RemoteEntryModule),
       },
+      {
+        path: 'app2',
+        loadChildren: () =>
+          import('app2/Module').then((m) => m.RemoteEntryModule),
+      },
     ]),
   ],
   providers: [],

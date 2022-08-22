@@ -4,6 +4,9 @@
   "projects": {
     "app1": "apps/app1",
     "app1-e2e": "apps/app1-e2e",
+    "app2": "apps/app2",
+    "app2-e2e": "apps/app2-e2e",
+    "app2-main": "libs/app2-main",
     "shell": "apps/shell",
     "shell-e2e": "apps/shell-e2e",
     "ui": "libs/ui"

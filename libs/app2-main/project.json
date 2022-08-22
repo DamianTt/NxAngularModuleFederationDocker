@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/app2-main/src",
+  "prefix": "app2",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/app2-main"],
+      "options": {
+        "jestConfig": "libs/app2-main/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/app2-main/**/*.ts",
+          "libs/app2-main/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

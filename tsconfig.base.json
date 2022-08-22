@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@work/app2-main": ["libs/app2-main/src/index.ts"],
       "@work/ui": ["libs/ui/src/index.ts"]
     }
   },
