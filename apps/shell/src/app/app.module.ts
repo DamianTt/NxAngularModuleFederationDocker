@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ShellInnerComponent } from './shell-inner/shell-inner.component';
+import { MaterialModule } from '@work/material';
 
 @NgModule({
   declarations: [AppComponent, ShellInnerComponent],
@@ -28,8 +27,7 @@ import { ShellInnerComponent } from './shell-inner/shell-inner.component';
       },
     ]),
     BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatInputModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
