@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { FancyInputComponent } from './components/fancy-input/fancy-input.component';
-import { MaterialModule } from '@work/material';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
-  imports: [CommonModule, MaterialModule],
+  imports: [MatFormFieldModule, MatInputModule],
   declarations: [FancyInputComponent],
   exports: [FancyInputComponent],
 })

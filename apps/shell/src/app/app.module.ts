@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ShellInnerComponent } from './shell-inner/shell-inner.component';
-import { MaterialModule } from '@work/material';
 
 @NgModule({
   declarations: [AppComponent, ShellInnerComponent],
@@ -27,7 +26,6 @@ import { MaterialModule } from '@work/material';
       },
     ]),
     BrowserAnimationsModule,
-    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
