@@ -8,7 +8,8 @@
     "start": "nx serve",
     "dev": "nx serve shell --devRemotes=app1,app2",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "checksum": "node ./build-pipeline/getDependenciesChecksum.js"
   },
   "private": true,
   "dependencies": {
@@ -58,4 +59,3 @@
     "typescript": "~4.7.2"
   }
 }
-
