@@ -1,4 +1,5 @@
 # https://gist.github.com/codezninja/c227d9c65b09d2be2d99abbfcfa8774a
+# https://gist.github.com/DarrenN/8c6a5b969481725a4413
 
 
 version="$(jq -r '.version' build-pipeline/registry.json)"
