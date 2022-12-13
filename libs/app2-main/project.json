@@ -1,11 +1,12 @@
 {
+  "name": "app2-main",
   "projectType": "library",
   "sourceRoot": "libs/app2-main/src",
   "prefix": "app2",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/app2-main"],
+      "outputs": ["{workspaceRoot}/coverage/libs/app2-main"],
       "options": {
         "jestConfig": "libs/app2-main/jest.config.ts",
         "passWithNoTests": true

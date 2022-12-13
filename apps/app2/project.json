@@ -1,11 +1,14 @@
 {
+  "name": "app2",
   "projectType": "application",
   "sourceRoot": "apps/app2/src",
   "prefix": "work",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:webpack-browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/app2",
         "index": "apps/app2/src/index.html",
@@ -13,8 +16,13 @@
         "polyfills": "apps/app2/src/polyfills.ts",
         "tsConfig": "apps/app2/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/app2/src/favicon.ico", "apps/app2/src/assets"],
-        "styles": ["apps/app2/src/styles.scss"],
+        "assets": [
+          "apps/app2/src/favicon.ico",
+          "apps/app2/src/assets"
+        ],
+        "styles": [
+          "apps/app2/src/styles.scss"
+        ],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/app2/webpack.config.js"
@@ -57,7 +65,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@nrwl/angular:webpack-server",
+      "executor": "@nrwl/angular:webpack-dev-server",
       "configurations": {
         "production": {
           "browserTarget": "app2:build:production"
@@ -81,12 +89,17 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/app2/**/*.ts", "apps/app2/**/*.html"]
+        "lintFilePatterns": [
+          "apps/app2/**/*.ts",
+          "apps/app2/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/app2"],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/app2"
+      ],
       "options": {
         "jestConfig": "apps/app2/jest.config.ts",
         "passWithNoTests": true
