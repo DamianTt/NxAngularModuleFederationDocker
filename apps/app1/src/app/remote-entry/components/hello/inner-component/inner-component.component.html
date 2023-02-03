@@ -2,3 +2,17 @@
   app1 inner component - color from global app1 styles, capitalize from imported
   scss file, underline from component scope
 </p>
+
+<div class="form-set">
+  <ui-fancy-input></ui-fancy-input>
+
+  <h4>Basic mat-select</h4>
+  <mat-form-field appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{ food.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
